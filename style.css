@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container__categories {
+    text-align: center;
+    padding: 50px;
+}
+
+.container__categories button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: unset;
+    border: 1px solid yellow;
+    margin: 5px;
+}
+
+.container__menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+    padding: 10px;
+}
+
+.container__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 200px;
+}
+
+.item-header {display: flex; justify-content: space-between;}
+.price {margin-right: 20px;}
+
+.description {
+    grid-column: 2;
+    padding: 5px;
+}
+
+.page-buttons {
+    text-align: center;
+    padding: 50px;
+}
+
+.button-first-page,
+.button-second-page,
+.button-third-page {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+/*
+
+        <div class="container__menu">
+            <div class="container__item">
+                <img src="1.jpg">
+                <div class="item-header">
+                    <p class="title"></p>
+                    <p class="price"></p>
+                </div>
+                <p class="description"></p>
+            </div>
+            </div>
+        </div>
+*/
